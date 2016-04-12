@@ -1,0 +1,115 @@
+body {
+	padding-top: 60px;
+	color: white; 
+	background:url('../img/engineering.jpg');
+	background-size: cover;
+}
+@media (max-width: 979px) {
+  	body {
+    	padding-top: 0px;
+    	color: white;
+    	background:url('../img/engineering.jpg');
+    	background-size: cover;
+  	}
+}
+
+h1, h2, h3, h4, h5 {
+	text-align: center;
+}
+
+table {
+	background-color: rgba(0,0,0,0.75);
+	text-align: center;
+}
+
+th {
+	text-align: center;
+	background-color: rgba(40,96,144,0.75);
+}
+
+label {
+	color: black;
+}
+
+button {
+    color: white;
+    background-color: #337AB7;
+}
+
+form {
+	color: black;
+}
+
+h4 {
+	color: black;
+	text-align: center;
+}
+
+.jumbotron {
+	background-color: rgba(0,0,0,0.5);
+	text-align: center; 
+}
+
+.footer {
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	text-align: center;
+	margin-top: 20px;
+	padding: 10px;
+	border-radius: 15px;
+	border-color: #000077;
+	border-width: 2px;
+	border-style: solid;
+}
+
+.mav-logo {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+}
+
+/* override default properties of bootstrap */
+
+.in-panel th {
+	background-color: #AAEEFF;
+}
+
+.in-panel tr {
+	background-color: white;
+}
+
+.modal-body {
+	color: black;	
+}
+
+.navbar {
+	background-color: #104E8B; 
+}
+
+.navbar-inverse .navbar-nav li a {
+	color: #E67E22;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #E67E22;
+}
+
+.alert {
+	width: 60%;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.panel .panel-heading {
+	color: #FFFFFF;
+	background-color: #104E8B;
+	background-image: none !important;
+	text-align: center;
+	font-weight: bold;
+	font-size: 150%;
+}
+
+.panel .panel-body {
+	color: #000000;
+}
