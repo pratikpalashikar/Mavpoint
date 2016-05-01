@@ -16,6 +16,11 @@ public final class LinkMap {
 	public static final String APPOINTMENT_DETAIL = APP_ROOT + ServletMap.APPOINTMENT_DETAIL;
 	public static final String APPOINTMENT_CANCEL = APP_ROOT + ServletMap.APPOINTMENT_CANCEL;
 	public static final String STUDENT_CREATE_APPOINTMENT = APP_ROOT + ServletMap.STUDENT_CREATE_APPOINTMENT;	
+	public static final String STUDENT_RESET_PASSWORD = APP_ROOT + ServletMap.STUDENT_RESET_PASSWORD;
+
+	//Password reset URL
+	public static final String STUDENT_RESET_FORGOT_ACCOUNT = APP_ROOT + ServletMap.STUDENT_RESET_PASSWORD;
+
 
 	// Advisor URLs
 	public static final String ADVISOR_LIST_TIME_SLOT = APP_ROOT + ServletMap.ADVISOR_LIST_TIME_SLOT;

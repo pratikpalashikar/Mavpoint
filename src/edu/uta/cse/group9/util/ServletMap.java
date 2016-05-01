@@ -13,7 +13,8 @@ public final class ServletMap {
 	public static final String PREFERENCES = "/preferences";
 	
 	// Student URLs
-	public static final String STUDENT_CREATE_ACCOUNT = "/student/create";
+	public static final String STUDENT_CREATE_ACCOUNT = "/student/resetPassword";
+	public static final String STUDENT_RESET_PASSWORD = "/student/create";
 	public static final String APPOINTMENT_DETAIL = "/appointment/show";
 	public static final String APPOINTMENT_CANCEL = "/appointment/cancel";
 	public static final String STUDENT_CREATE_APPOINTMENT = "/appointment/create";	

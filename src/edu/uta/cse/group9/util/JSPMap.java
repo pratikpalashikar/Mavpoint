@@ -5,6 +5,7 @@ public final class JSPMap {
 	public static final String HOME_URL = "/WEB-INF/jsp/index.jsp";
 	public static final String PREFERENCES_URL = "/WEB-INF/jsp/preferences.jsp";
 	public static final String USER_RESET_PASSWORD_URL="/WEB-INF/jsp/changePassword.jsp";
+	public static final String USER_RESET_PASSWORD_FORGOT_URL="/WEB-INF/jsp/resetPassword.jsp";
 	public static final String CALENDAR_TEST_URL = "/WEB-INF/jsp/calendar.jsp";
 	
 	public static final String STUDENT_NAVBAR =  "/WEB-INF/jsp/templates/studentNavbar.jsp";
