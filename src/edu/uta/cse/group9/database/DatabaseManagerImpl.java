@@ -30,4 +30,5 @@ public interface DatabaseManagerImpl {
 	public boolean insertTimeSlot(TimeSlot tS) throws Exception;
 	public boolean updateTimeSlot(TimeSlot ts) throws Exception;
 	public TimeSlot getTimeSlot(Integer id) throws Exception;
+	public boolean updatePassword(User user) throws Exception;
 }

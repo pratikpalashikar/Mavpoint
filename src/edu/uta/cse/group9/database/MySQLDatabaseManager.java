@@ -18,6 +18,7 @@ import edu.uta.cse.group9.database.command.InsertUserCommand;
 import edu.uta.cse.group9.database.command.SQLCommand;
 import edu.uta.cse.group9.database.command.TerminateSessionCommand;
 import edu.uta.cse.group9.database.command.UpdateAppointmentCommand;
+import edu.uta.cse.group9.database.command.UpdatePasswordCommand;
 import edu.uta.cse.group9.database.command.UpdateTimeSlotCommand;
 import edu.uta.cse.group9.database.command.UpdateUserCommand;
 import edu.uta.cse.group9.model.AdvisingTask;
@@ -135,5 +136,12 @@ public class MySQLDatabaseManager implements DatabaseManagerImpl {
 		SQLCommand command = new GetTimeSlotsForAdvisorCommand(advisor, start, end);
 		command.execute();
 		return (List<TimeSlot>) command.getResult();
+	}
+
+	@Override
+	public boolean updatePassword(User user) throws Exception {
+		SQLCommand command = new UpdatePasswordCommand(user);
+		command.execute();
+		return (Boolean) command.getResult();
 	}
 }

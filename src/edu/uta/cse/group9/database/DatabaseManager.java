@@ -38,6 +38,10 @@ public class DatabaseManager {
 		return imp.insertUser(user);
 	}
 	
+	public boolean updatePassword(User user) throws Exception{
+		return imp.updatePassword(user);
+	}
+	
 	public boolean updateUser(User user) throws Exception {
 		return imp.updateUser(user);
 	}

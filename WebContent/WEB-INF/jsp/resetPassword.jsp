@@ -30,6 +30,9 @@
 				<div class="panel panel-primary">
 					<div class="panel-heading">Password Reset</div>
 					<div class="panel-body">
+					<form name="reset_password" id="reset_password" class="form-horizontal"
+							method="post" action="<%=LinkMap.STUDENT_RESET_FORGOT_ACCOUNT%>"
+							role="form">
 						<div class="col-sm-6">
 							<input type="email" class="form-control" id="resetEmail"
 								name="resetEmail" placeholder="johnsmith@abc.com" required>
@@ -37,7 +40,7 @@
 						<div class="col-sm-6">
 							<button type="submit" class="btn btn-Primary col-md-offset-5">Send Verification</button>
 						</div>
-						
+						</form>
 
 					</div>
 
