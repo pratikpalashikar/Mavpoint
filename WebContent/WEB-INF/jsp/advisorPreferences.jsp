@@ -2,10 +2,10 @@
 <%@ page import="edu.uta.cse.group9.util.LinkMap"%>
 <div class="container">
 	<div class="row">
-		<h1>Advisor Preferences</h1>
+		<!-- <h1>Advisor Preferences</h1> -->
 		<form id="admin_preferences" class="form-horizontal" role="form" method="post" action="<%=LinkMap.PREFERENCES%>">
 			<div class="panel panel-primary">
-				<div class="panel-heading">Email Preferences</div>
+				<div class="panel-heading">Email Notification</div>
 				<div class="panel-body">
 					<div class="form-group">
 						<div class="col-xs-12">

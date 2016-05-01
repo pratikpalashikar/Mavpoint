@@ -2,7 +2,7 @@
 <%@ page import="edu.uta.cse.group9.util.LinkMap"%>
 <div class="container">
 	<div class="row">
-		<h1>Admin Preferences</h1>
+	<!-- Removed Header -->
 		<form id="admin_preferences" class="form-horizontal" role="form" method="post" action="<%=LinkMap.PREFERENCES%>">
 			<div class="panel panel-primary">
 				<div class="panel-heading">Advisor Assignments</div>
