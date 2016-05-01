@@ -97,8 +97,8 @@ public class ResetForgotPassword extends Controller {
 				request.setAttribute("success", "One time password sent on your registered email");
 				getServletContext().getRequestDispatcher(JSPMap.USER_RESET_PASSWORD_URL).forward(request, response);
 			} else {
-				request.setAttribute("error", "An unknown error occurred.Failed to send email verification");
-				getServletContext().getRequestDispatcher(JSPMap.USER_RESET_PASSWORD_URL).forward(request, response);
+				request.setAttribute("error", "You are not registered.Failed to send email verification");
+				getServletContext().getRequestDispatcher(JSPMap.HOME_URL).forward(request, response);
 			}
 		} catch (Exception e) {
 			request.setAttribute("error", e.getMessage());

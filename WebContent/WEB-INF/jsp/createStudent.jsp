@@ -31,6 +31,42 @@
 
 		}
 	}
+	
+	
+	function checkPassword(form){
+		if(form.password.value != "" && form.password.value == form.confirm_password.value) {
+		      if(form.password.value.length < 6 && form.password.value.length > 20) {
+		        alert("Error: Password must contain at least six characters!");
+		        form.password.focus();
+		        return false;
+		      }
+		      re = /[0-9]/;
+		      if(!re.test(form.password.value)) {
+		        alert("Error: password must contain at least one number (0-9)!");
+		        form.password.focus();
+		        return false;
+		      }
+		      re = /[a-z]/;
+		      if(!re.test(form.password.value)) {
+		        alert("Error: password must contain at least one lowercase letter (a-z)!");
+		        form.password.focus();
+		        return false;
+		      }
+		      re = /[A-Z]/;
+		      if(!re.test(form.password.value)) {
+		        alert("Error: password must contain at least one uppercase letter (A-Z)!");
+		        form.password.focus();
+		        return false;
+		      }
+		    } else {
+		      alert("Error: Please check that you've entered your password!");
+		      form.password.focus();
+		      return false;
+		    }
+		alert("You entered a valid password: ");
+	    return true;
+	}
+	
 </script>
 </head>
 <body>
@@ -52,7 +88,7 @@
 				<div class="panel panel-primary">
 					<div class="panel-heading">Student Registration</div>
 					<div class="panel-body">
-						<form name="user_create" id="user_create" class="form-horizontal"
+						<form name="user_create" id="user_create" onsubmit="return checkPassword(this)" class="form-horizontal"
 							method="post" action="<%=LinkMap.STUDENT_CREATE_ACCOUNT%>"
 							role="form">
 

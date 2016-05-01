@@ -5,6 +5,44 @@
 <%@ page import="edu.uta.cse.group9.util.JSPMap"%>
 <%@ page import="edu.uta.cse.group9.util.LinkMap"%>
 <jsp:include page="templates/header.jsp" />
+<script script="text/javascript">
+
+function checkPassword(form){
+	
+	if(form.new_password.value != "" && form.new_password.value == form.c_new_password.value) {
+		      if(form.new_password.value.length < 6 && form.new_password.value.length > 20) {
+		        alert("Error: Password must contain at least six characters!");
+		        form.new_password.focus();
+		        return false;
+		      }
+		      re = /[0-9]/;
+		      if(!re.test(form.new_password.value)) {
+		        alert("Error: password must contain at least one number (0-9)!");
+		        form.new_password.focus();
+		        return false;
+		      }
+		      re = /[a-z]/;
+		      if(!re.test(form.new_password.value)) {
+		        alert("Error: password must contain at least one lowercase letter (a-z)!");
+		        form.new_password.focus();
+		        return false;
+		      }
+		      re = /[A-Z]/;
+		      if(!re.test(form.new_password.value)) {
+		        alert("Error: password must contain at least one uppercase letter (A-Z)!");
+		        form.new_password.focus();
+		        return false;
+		      }
+		    } else {
+		      alert("Error: Please check that you've entered your password!");
+		      form.new_password.focus();
+		      return false;
+		    }
+	    return true;
+	}
+
+
+</script>
 <head>
 </head>
 <body>
@@ -26,7 +64,7 @@
 				<div class="panel panel-primary">
 					<div class="panel-heading">Reset Password</div>
 					<div class="panel-body">
-						<form name="reset_password" id="reset_password" class="form-horizontal" method="post"
+						<form name="reset_password" id="reset_password" onsubmit="return checkPassword(this)" class="form-horizontal" method="post"
 							action="<%=LinkMap.RESET_PASSWORD%>" role="form">
 
 							<div class="form-group">
