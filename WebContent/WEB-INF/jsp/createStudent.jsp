@@ -123,15 +123,20 @@
 							</div>
 							<!-- These should be generated dynamically -->
 							<div class="form-group">
-								<label class="col-sm-2 control-label" for="student_type">Student
-									Type</label>
+								<label class="col-sm-2 control-label" for="student_type">Degree-Department</label>
 								<div class="col-sm-4">
 									<select id="student_type" name="student_type"
 										class="form-control" required>
 										<option value="">--------Select--------</option>
-										<option value="0">Undergraduate</option>
-										<option value="1">Graduate</option>
-										<option value="2">Doctorate</option>
+										<option value="0">Undergraduate-CSE</option>
+										<option value="1">Graduate-CSE</option>
+										<option value="2">Doctorate-CSE</option>
+										<option value="3">Undergraduate-ME</option>
+										<option value="4">Graduate-ME</option>
+										<option value="5">Doctorate-ME</option>
+										<option value="6">Undergraduate-EE</option>
+										<option value="7">Graduate-EE</option>
+										<option value="8">Doctorate-EE</option>
 									</select>
 								</div>
 							</div>
