@@ -125,7 +125,7 @@
 							<div class="form-group">
 								<label class="col-sm-2 control-label" for="student_type">Degree-Department</label>
 								<div class="col-sm-4">
-									<select id="student_type" name="student_type"
+									<select multiple id="student_type" name="student_type"
 										class="form-control" required>
 										<option value="">--------Select--------</option>
 										<option value="0">Undergraduate-CSE</option>
