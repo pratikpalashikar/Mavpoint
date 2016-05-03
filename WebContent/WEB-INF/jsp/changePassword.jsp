@@ -64,7 +64,7 @@ function checkPassword(form){
 				<div class="panel panel-primary">
 					<div class="panel-heading">Reset Password</div>
 					<div class="panel-body">
-						<form name="reset_password" id="reset_password" onsubmit="return checkPassword(this)" class="form-horizontal" method="post"
+						<form name="reset_password" id="reset_password" onSubmit="return checkPassword(this)" class="form-horizontal" method="post"
 							action="<%=LinkMap.RESET_PASSWORD%>" role="form">
 
 							<div class="form-group">

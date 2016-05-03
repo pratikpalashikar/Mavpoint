@@ -5,7 +5,7 @@
 	<ul class="dropdown-menu">
 		<li><a href="<%=LinkMap.LOG_OUT%>">Logout</a></li>
 		<li><a href="<%=LinkMap.RESET_PASSWORD%>">Change Password</a></li>
-		<li><a href="<%=LinkMap.PREFERENCES%>">Assign</a></li>
+		<li><a href="<%=LinkMap.PREFERENCES%>">Notify</a></li>
 		<li role="separator" class="divider"></li>
 		<li><a href="#">Feedback</a></li>
 	</ul>

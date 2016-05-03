@@ -70,7 +70,7 @@ public class EditPreferencesController extends Controller {
 		try {
 			method = this.getClass().getDeclaredMethod(methodName, HttpServletRequest.class);
 			method.invoke(this, (HttpServletRequest)request);
-			request.setAttribute("success", "Preferences updated.");
+			request.setAttribute("success", "Notification Activated");
 			getServletContext().getRequestDispatcher(ServletMap.HOME).forward(request, response);
 			return;			
 		} catch (Exception e) {

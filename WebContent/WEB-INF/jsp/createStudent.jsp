@@ -88,7 +88,7 @@
 				<div class="panel panel-primary">
 					<div class="panel-heading">Student Registration</div>
 					<div class="panel-body">
-						<form name="user_create" id="user_create" onsubmit="return checkPassword(this)" class="form-horizontal"
+						<form name="user_create" id="user_create" onSubmit="return checkPassword(this)" class="form-horizontal"
 							method="post" action="<%=LinkMap.STUDENT_CREATE_ACCOUNT%>"
 							role="form">
 
