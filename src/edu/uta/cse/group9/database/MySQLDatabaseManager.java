@@ -3,6 +3,7 @@ package edu.uta.cse.group9.database;
 import java.util.Date;
 import java.util.List;
 
+import edu.uta.cse.group9.database.command.CancelAppointmentCommand;
 import edu.uta.cse.group9.database.command.GetAdvisingTaskCommand;
 import edu.uta.cse.group9.database.command.GetAdvisingTasksCommand;
 import edu.uta.cse.group9.database.command.GetAdvisorListCommand;
@@ -144,4 +145,13 @@ public class MySQLDatabaseManager implements DatabaseManagerImpl {
 		command.execute();
 		return (Boolean) command.getResult();
 	}
+
+	@Override
+	public Object cancelScheduledAppointment(TimeSlot timeslot) throws Exception {
+		SQLCommand command = new CancelAppointmentCommand(timeslot);
+		command.execute();
+		return command.getResult();
+	}
+
+	
 }

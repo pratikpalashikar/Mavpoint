@@ -93,4 +93,8 @@ public class DatabaseManager {
 	public Appointment getAppointment(Integer id) throws Exception {
 		return imp.getAppointment(id);
 	}
+
+	public Object cancelShceduledAppointment(TimeSlot timeslot) throws Exception {
+		return imp.cancelScheduledAppointment(timeslot);
+	}
 }

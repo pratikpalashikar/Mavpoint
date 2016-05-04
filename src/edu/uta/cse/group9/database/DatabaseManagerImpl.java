@@ -31,4 +31,5 @@ public interface DatabaseManagerImpl {
 	public boolean updateTimeSlot(TimeSlot ts) throws Exception;
 	public TimeSlot getTimeSlot(Integer id) throws Exception;
 	public boolean updatePassword(User user) throws Exception;
+	public Object cancelScheduledAppointment(TimeSlot timeslot)throws Exception;
 }
